@@ -1,11 +1,11 @@
 Summary:	Grilo plugins
 Name:		grilo-plugins
-Version:	0.2.4
+Version:	0.2.5
 Release:	1
 License:	LGPL v2.1+
 Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/grilo-plugins/0.2/%{name}-%{version}.tar.xz
-# Source0-md5:	cd7f785661d55ebfd89f63f6d1b2fee8
+# Source0-md5:	a73f0f022c0a2d1f6c7f44de98df38dc
 URL:		http://live.gnome.org/Grilo
 BuildRequires:	autoconf
 BuildRequires:	automake
