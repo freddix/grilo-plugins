@@ -1,11 +1,11 @@
 Summary:	Grilo plugins
 Name:		grilo-plugins
-Version:	0.2.5
+Version:	0.2.6
 Release:	1
 License:	LGPL v2.1+
 Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/grilo-plugins/0.2/%{name}-%{version}.tar.xz
-# Source0-md5:	a73f0f022c0a2d1f6c7f44de98df38dc
+# Source0-md5:	9504b53f6e35276b05ffb18a30d8ce39
 URL:		http://live.gnome.org/Grilo
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -66,24 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%{_libdir}/grilo-0.2/grl-apple-trailers.xml
-%{_libdir}/grilo-0.2/grl-bliptv.xml
-%{_libdir}/grilo-0.2/grl-bookmarks.xml
-%{_libdir}/grilo-0.2/grl-filesystem.xml
-%{_libdir}/grilo-0.2/grl-flickr.xml
-%{_libdir}/grilo-0.2/grl-gravatar.xml
-%{_libdir}/grilo-0.2/grl-jamendo.xml
-%{_libdir}/grilo-0.2/grl-lastfm-albumart.xml
-%{_libdir}/grilo-0.2/grl-local-metadata.xml
-%{_libdir}/grilo-0.2/grl-metadata-store.xml
-%{_libdir}/grilo-0.2/grl-optical-media.xml
-%{_libdir}/grilo-0.2/grl-podcasts.xml
-%{_libdir}/grilo-0.2/grl-shoutcast.xml
-%{_libdir}/grilo-0.2/grl-tmdb.xml
-%{_libdir}/grilo-0.2/grl-tracker.xml
-%{_libdir}/grilo-0.2/grl-upnp.xml
-%{_libdir}/grilo-0.2/grl-vimeo.xml
-%{_libdir}/grilo-0.2/grl-youtube.xml
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlappletrailers.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlbliptv.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlbookmarks.so
@@ -96,9 +78,30 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlmetadatastore.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrloptical-media.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlpodcasts.so
+%attr(755,root,root) %{_libdir}/grilo-0.2/libgrlraitv.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlshoutcast.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrltmdb.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrltracker.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlupnp.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlvimeo.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlyoutube.so
+%{_libdir}/grilo-0.2/grl-apple-trailers.xml
+%{_libdir}/grilo-0.2/grl-bliptv.xml
+%{_libdir}/grilo-0.2/grl-bookmarks.xml
+%{_libdir}/grilo-0.2/grl-filesystem.xml
+%{_libdir}/grilo-0.2/grl-flickr.xml
+%{_libdir}/grilo-0.2/grl-gravatar.xml
+%{_libdir}/grilo-0.2/grl-jamendo.xml
+%{_libdir}/grilo-0.2/grl-lastfm-albumart.xml
+%{_libdir}/grilo-0.2/grl-local-metadata.xml
+%{_libdir}/grilo-0.2/grl-metadata-store.xml
+%{_libdir}/grilo-0.2/grl-optical-media.xml
+%{_libdir}/grilo-0.2/grl-podcasts.xml
+%{_libdir}/grilo-0.2/grl-raitv.xml
+%{_libdir}/grilo-0.2/grl-shoutcast.xml
+%{_libdir}/grilo-0.2/grl-tmdb.xml
+%{_libdir}/grilo-0.2/grl-tracker.xml
+%{_libdir}/grilo-0.2/grl-upnp.xml
+%{_libdir}/grilo-0.2/grl-vimeo.xml
+%{_libdir}/grilo-0.2/grl-youtube.xml
+
