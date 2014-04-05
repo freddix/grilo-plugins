@@ -1,7 +1,7 @@
 Summary:	Grilo plugins
 Name:		grilo-plugins
 Version:	0.2.12
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/grilo-plugins/0.2/%{name}-%{version}.tar.xz
@@ -77,9 +77,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlgravatar.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrljamendo.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrllastfm-albumart.so
+%attr(755,root,root) %{_libdir}/grilo-0.2/libgrllocalmetadata.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlmagnatune.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlmetadatastore.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrloptical-media.so
+%attr(755,root,root) %{_libdir}/grilo-0.2/libgrlpocket.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlpodcasts.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlraitv.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlshoutcast.so
@@ -97,9 +99,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/grilo-0.2/grl-gravatar.xml
 %{_libdir}/grilo-0.2/grl-jamendo.xml
 %{_libdir}/grilo-0.2/grl-lastfm-albumart.xml
+%{_libdir}/grilo-0.2/grl-local-metadata.xml
 %{_libdir}/grilo-0.2/grl-magnatune.xml
 %{_libdir}/grilo-0.2/grl-metadata-store.xml
 %{_libdir}/grilo-0.2/grl-optical-media.xml
+%{_libdir}/grilo-0.2/grl-pocket.xml
 %{_libdir}/grilo-0.2/grl-podcasts.xml
 %{_libdir}/grilo-0.2/grl-raitv.xml
 %{_libdir}/grilo-0.2/grl-shoutcast.xml
