@@ -1,11 +1,11 @@
 Summary:	Grilo plugins
 Name:		grilo-plugins
-Version:	0.2.12
-Release:	2
+Version:	0.2.13
+Release:	1
 License:	LGPL v2.1+
 Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/grilo-plugins/0.2/%{name}-%{version}.tar.xz
-# Source0-md5:	3a1f8c8775f95cb2deb29f8332d1fc8f
+# Source0-md5:	45030aab3f21b561b1c899ebb7dce54d
 URL:		http://live.gnome.org/Grilo
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlappletrailers.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlbliptv.so
-%attr(755,root,root) %{_libdir}/grilo-0.2/libgrlbookmarks.so
+%attr(755,root,root) %{_libdir}/grilo-0.2/libgrldleyna.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlfilesystem.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlflickr.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlfreebox.so
@@ -87,12 +87,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlshoutcast.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrltmdb.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrltracker.so
-%attr(755,root,root) %{_libdir}/grilo-0.2/libgrlupnp.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlvimeo.so
 %attr(755,root,root) %{_libdir}/grilo-0.2/libgrlyoutube.so
 %{_libdir}/grilo-0.2/grl-apple-trailers.xml
 %{_libdir}/grilo-0.2/grl-bliptv.xml
-%{_libdir}/grilo-0.2/grl-bookmarks.xml
+%{_libdir}/grilo-0.2/grl-dleyna.xml
 %{_libdir}/grilo-0.2/grl-filesystem.xml
 %{_libdir}/grilo-0.2/grl-flickr.xml
 %{_libdir}/grilo-0.2/grl-freebox.xml
@@ -109,7 +108,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/grilo-0.2/grl-shoutcast.xml
 %{_libdir}/grilo-0.2/grl-tmdb.xml
 %{_libdir}/grilo-0.2/grl-tracker.xml
-%{_libdir}/grilo-0.2/grl-upnp.xml
 %{_libdir}/grilo-0.2/grl-vimeo.xml
 %{_libdir}/grilo-0.2/grl-youtube.xml
 
@@ -119,6 +117,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/grilo-plugins/grl-lua-factory/grl-euronews.lua
 %{_datadir}/grilo-plugins/grl-lua-factory/grl-guardianvideos.lua
 %{_datadir}/grilo-plugins/grl-lua-factory/grl-metrolyrics.lua
+%{_datadir}/grilo-plugins/grl-lua-factory/grl-musicbrainz.lua
 %{_datadir}/grilo-plugins/grl-lua-factory/grl-radiofrance.lua
 %{_libdir}/grilo-0.2/grl-lua-factory.xml
 
